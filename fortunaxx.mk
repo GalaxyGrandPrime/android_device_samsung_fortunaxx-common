@@ -1,3 +1,6 @@
+# Include Bootanimation configuration
+TARGET_BOOT_ANIMATION_RES := 540
+
 # Also get non-open-source specific aspects if available
 $(call inherit-product-if-exists, vendor/samsung/fortunaxx-common/fortunaxx-common-vendor.mk)
 
