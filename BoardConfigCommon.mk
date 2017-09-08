@@ -125,6 +125,9 @@ CHARGING_ENABLED_PATH                := /sys/class/power_supply/battery/batt_lp_
 BOARD_NO_CHARGER_LED                 := true
 BOARD_CHARGER_DISABLE_INIT_BLANK     := true
 
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
+
 # Enable QCOM FM feature
 AUDIO_FEATURE_ENABLED_FM             := true
 
