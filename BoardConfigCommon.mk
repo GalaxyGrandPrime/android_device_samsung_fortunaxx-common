@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Inherit from samsung qcom-common
--include device/samsung/qcom-common/BoardConfigCommon.mk 
+-include device/samsung/qcom-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/fortunaxx-common/BoardConfigVendor.mk
@@ -182,6 +182,8 @@ OVERRIDE_RS_DRIVER                    := libRSDriver_adreno.so
 # Boot animation
 TARGET_SCREEN_WIDTH                  := 540
 TARGET_SCREEN_HEIGHT                 := 960
+TARGET_BOOTANIMATION_PRELOAD 	     := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE   := true
 
 # Snapdragon LLVM
 TARGET_USE_SDCLANG                   := true
